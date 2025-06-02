@@ -872,6 +872,23 @@ export default function OpticsLabPage() {
             </svg>
           </div>
 
+          {/* Mobile Interaction Instructions */}
+          <div className="w-full md:hidden text-center bg-gray-900/50 p-3 rounded-lg border border-cyan-400/30">
+            <p className="text-gray-300 mb-2">
+              <span className="text-cyan-400">Interactive Elements</span>
+            </p>
+            <div className="flex flex-col justify-center gap-2">
+              <div className="text-sm text-gray-400 font-semibold text-left">
+                <span className="text-cyan-400">●</span> Click and drag
+                lens/mirror to move
+              </div>
+              <div className="text-sm text-gray-400 font-semibold text-left">
+                <span className="text-yellow-400">●</span> Drag focal points (F)
+                to adjust focal length
+              </div>
+            </div>
+          </div>
+
           {/* Controls Panel */}
           <div className="w-full md:w-96 bg-gray-900/50 p-4 md:p-6 rounded-lg shadow-2xl border border-cyan-400/30 flex flex-col gap-6">
             {/* Laser Controls */}
@@ -1047,6 +1064,23 @@ export default function OpticsLabPage() {
                       `, F=${el.focalLength.toFixed(0)}`}
                   </p>
                 ))}
+              </div>
+
+              {/* Desktop Interaction Instructions */}
+              <div className="hidden md:block text-center bg-gray-800/50 p-3 rounded">
+                <p className="text-gray-300 mb-2">
+                  <span className="text-cyan-400">Interactive Elements</span>
+                </p>
+                <div className="flex flex-col gap-2">
+                  <div className="text-sm text-gray-400 font-semibold text-left">
+                    <span className="text-cyan-400">●</span> Click and drag
+                    lens/mirror to move
+                  </div>
+                  <div className="text-sm text-gray-400 font-semibold text-left">
+                    <span className="text-yellow-400">●</span> Drag focal points
+                    (F) to adjust focal length
+                  </div>
+                </div>
               </div>
             </div>
           </div>
